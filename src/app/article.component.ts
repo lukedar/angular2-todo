@@ -3,13 +3,21 @@ import {Component, EventEmitter, Input, Output, OnInit, OnDestroy} from '@angula
 @Component({
   selector: 'article',
   template: `
-    <h1 >
+    <h1>
       <ng-content></ng-content>{{articleTitle}}
     </h1>
   `
 })
 export class ArticleComponent implements OnInit, OnDestroy {
   @Input() articleTitle:string;
+
+  @Output()
+  selectedTitleEvent: EventEmitter<string> = new EventEmitter<string>();
+
+  emitSelectedItem(title) {
+    console.log('emited from article', title);
+    this.selectedTitleEvent.emit(title);
+  }
 
   ngOnInit() {
     console.log('created', this.articleTitle);
