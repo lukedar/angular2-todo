@@ -3,7 +3,7 @@ import {Component, Input, OnInit, OnDestroy} from '@angular/core';
 @Component({
   selector: 'selected',
   template: `
-    <h>
+    <h4>
       Selected Item: {{selectedItem}}
     </h4>
   `

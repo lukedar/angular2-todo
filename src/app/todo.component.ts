@@ -8,7 +8,7 @@ import {Component, EventEmitter, Input, Output, OnInit, OnDestroy} from '@angula
     </h1>
   `
 })
-export class TodoComponent implements OnInit, OnDestroy {
+export class Todoomponent implements OnInit, OnDestroy {
   @Input() articleTitle:string;
 
   ngOnInit() {
