@@ -2,7 +2,7 @@ import {Component, Output} from '@angular/core';
 import {SelectedComponent} from './selected.component';
 
 @Component({
-  selector: 'article-list',
+  selector: 'todo-list',
   template: `
       <h1>To do List</h1>
       <selected [selectedItem]="selectedTitle"></selected>
@@ -15,7 +15,7 @@ import {SelectedComponent} from './selected.component';
       </article>
   `
 })
-export class ArticleListComponent {
+export class TodoListComponent {
   titles:Array<string> = [];
   activeId:Number = null;
   selectedTitle:string  = '';

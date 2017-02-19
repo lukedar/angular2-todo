@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {ArticleComponent} from './article.component';
-import {ArticleListComponent} from './article-list.component';
+import {TodoComponent} from './todo.component';
+import {TodoListComponent} from './todo-list.component';
 import {SelectedComponent} from './selected.component';
 
 @NgModule({
@@ -9,12 +9,12 @@ import {SelectedComponent} from './selected.component';
     BrowserModule
   ],
   declarations: [
-    ArticleComponent,
-    ArticleListComponent,
+    TodoComponent,
+    TodoListComponent,
     SelectedComponent
   ],
   bootstrap: [
-    ArticleListComponent
+    TodoListComponent
   ]
 })
 export class AppModule {}
